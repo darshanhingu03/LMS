@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Technology Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .slide-container {
+            width: 100%;
+            max-width: 1280px;
+            height: auto;
+            min-height: 100vh;
+            background-color: #ffffff;
+            color: #1f2937;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-btn {
+            position: fixed;
+            bottom: 20px;
+            z-index: 50;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn:hover {
+            background: rgba(0, 0, 0, 0.1);
+            transform: scale(1.1);
+        }
+
+        .nav-prev {
+            left: 20px;
+        }
+
+        .nav-next {
+            right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .slide-container {
+                padding: 1.5rem !important;
+            }
+
+            .grid-cols-4 {
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            .nav-btn {
+                bottom: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .nav-prev {
+                left: 10px;
+            }
+
+            .nav-next {
+                right: 10px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .tech-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tech-card:hover {
+            background: #f0f9ff;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .tech-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .tech-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 4px;
+        }
+
+        .tech-desc {
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container p-12">
+        <div class="mb-8">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <span class="text-blue-600 uppercase tracking-widest text-sm font-bold">Technology Stack</span>
+            </div>
+            <h1 class="text-3xl font-extrabold text-slate-800">Modern Technology Stack</h1>
+            <p class="text-slate-600 mt-2">Enterprise-grade technologies powering your LMS platform</p>
+        </div>
+        <div class="flex-1 flex flex-col justify-center">
+            <div class="grid grid-cols-4 gap-6">
+                <div class="tech-card">
+                    <div class="tech-icon bg-green-100 text-green-600">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="tech-title">Node.js</h3>
+                    <p class="tech-desc">Backend API</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-blue-100 text-blue-600">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="tech-title">React</h3>
+                    <p class="tech-desc">Frontend Framework</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-slate-100 text-slate-600">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="tech-title">PostgreSQL</h3>
+                    <p class="tech-desc">Primary Database</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-red-100 text-red-600">
+                        <i class="fab fa-redis"></i>
+                    </div>
+                    <h3 class="tech-title">Redis</h3>
+                    <p class="tech-desc">Cache &amp; Real-time</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-orange-100 text-orange-600">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="tech-title">AWS</h3>
+                    <p class="tech-desc">Cloud Hosting</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-yellow-100 text-yellow-600">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="tech-title">S3</h3>
+                    <p class="tech-desc">Object Storage</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="tech-title">CloudFront</h3>
+                    <p class="tech-desc">CDN &amp; Security</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon bg-indigo-100 text-indigo-600">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="tech-title">Stripe/Razorpay</h3>
+                    <p class="tech-desc">Payment Processing</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 flex justify-center items-center text-xs text-gray-400 border-t border-gray-100 pt-4">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                <span>Scalable Architecture</span>
+                <span class="w-2 h-2 rounded-full bg-blue-500 ml-4"></span>
+                <span>Enterprise Ready</span>
+                <span class="w-2 h-2 rounded-full bg-purple-500 ml-4"></span>
+                <span>Cloud Native</span>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <a href="13-module-eight.html" class="nav-btn nav-prev" title="Previous Slide">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a href="15-timeline.html" class="nav-btn nav-next" title="Next Slide">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+</body>
+
+</html>

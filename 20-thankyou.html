@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Thank You</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            width: 100%;
+            max-width: 1280px;
+            height: auto;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-btn {
+            position: fixed;
+            bottom: 20px;
+            z-index: 50;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .nav-prev {
+            left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .slide-container {
+                padding: 1.5rem !important;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1rem;
+            }
+
+            .nav-btn {
+                bottom: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .nav-prev {
+                left: 10px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            margin: 2rem auto;
+        }
+
+        .watermark {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container p-12 flex flex-col justify-center">
+        <div class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold mb-4">Thank You</h1>
+            <p class="text-xl text-blue-200">For considering our LMS development proposal</p>
+            <div class="divider"></div>
+        </div>
+        <div class="contact-grid max-w-4xl mx-auto">
+            <div class="contact-card">
+                <div class="contact-icon text-blue-300">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info">your.email@company.com</div>
+                <div class="contact-label">Email Address</div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon text-green-300">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">+91-98765-43210</div>
+                <div class="contact-label">Phone/WhatsApp</div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon text-purple-300">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="contact-info">www.yourcompany.com</div>
+                <div class="contact-label">Website</div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon text-orange-300">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="contact-info">Schedule a Call</div>
+                <div class="contact-label">Available for discussion</div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-lg text-blue-200 mb-2">Ready to build your next-generation LMS?</p>
+            <p class="text-sm text-white opacity-75">Questions? Let's discuss your requirements in detail.</p>
+        </div>
+        <div class="watermark">
+            Professional LMS Development • 2025
+        </div>
+    </div>
+    <!-- Navigation -->
+    <a href="19-why-choose-us.html" class="nav-btn nav-prev" title="Previous Slide">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+</body>
+
+</html>
